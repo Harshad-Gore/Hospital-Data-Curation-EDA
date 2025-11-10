@@ -1,0 +1,21 @@
+unit_id,department,floor,bed_capacity,location
+U1,Cardiology,10,43,Stephaniebury
+U2,General Medicine,7,35,West Catherine
+U3,Pediatrics,6,54,Jillton
+U4,Neurology,8,75,Lake Andrewmouth
+U5,Orthopedics,6,52,Andrewton
+U6,Orthopedics,7,77,Robertberg
+U7,Orthopedics,8,72,New Kyle
+U8,General Medicine,6,26,Fosterland
+U9,Pediatrics,8,38,Kellyside
+U10,Neurology,4,56,Rogersmouth
+U11,Cardiology,4,81,Samuelburgh
+U12,Orthopedics,6,61,Christopherberg
+U13,Orthopedics,2,53,Lake Luismouth
+U14,Cardiology,10,47,West Jacobview
+U15,Neurology,2,90,Mcgrathstad
+U16,Neurology,7,29,Mooreport
+U17,General Medicine,3,72,Rebeccaberg
+U18,General Medicine,3,86,Harmonburgh
+U19,Orthopedics,4,88,West Oscar
+U20,Neurology,6,81,Lake Taylor

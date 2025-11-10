@@ -1,0 +1,43 @@
+================================================================================
+DATA VALIDATION REPORT
+================================================================================
+
+
+Dataset: patients
+--------------------------------------------------------------------------------
+✓ PASS | unique_patient_id
+       all patient ids are unique
+
+✓ PASS | no_missing_patient_id
+       no missing values in patient_id
+
+
+Dataset: visits
+--------------------------------------------------------------------------------
+✓ PASS | unique_visit_id
+       all visit ids are unique
+
+✓ PASS | discharge_after_admission
+       all discharge dates are after admission dates
+
+✓ PASS | valid_length_of_stay
+       all length of stay values are between 0 and 365 days
+
+
+Dataset: diagnoses
+--------------------------------------------------------------------------------
+✓ PASS | valid_icd10_format
+       all icd-10 codes are valid
+
+✓ PASS | no_missing_visit_id
+       no missing visit ids
+
+
+Dataset: referential_integrity
+--------------------------------------------------------------------------------
+✓ PASS | visits_patient_id_exists
+       all patient ids in visits exist in patients table
+
+================================================================================
+SUMMARY: 8/8 checks passed (100.0%)
+================================================================================

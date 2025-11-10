@@ -1,0 +1,29 @@
+dataset,column_name,data_type,description,example,constraints
+patients,patient_id,string,unique identifier for each patient,P12345,"primary key, not null, unique"
+patients,date_of_birth,date,patient date of birth,1985-03-15,"not null, must be in past"
+patients,age,integer,patient age calculated from date of birth,45,0 <= age <= 120
+patients,gender,string,patient gender,Male,"values: Male, Female, Other, Unknown"
+patients,age_group,string,age category for demographic analysis,36-60,"values: 0-18, 19-35, 36-60, 60+"
+visits,visit_id,string,unique identifier for each hospital visit,V98765,"primary key, not null, unique"
+visits,patient_id,string,reference to patient who made the visit,P12345,foreign key to patients.patient_id
+visits,admission_date,date,date and time of hospital admission,2023-06-15,"not null, must be <= discharge_date"
+visits,discharge_date,date,date and time of hospital discharge,2023-06-23,must be >= admission_date
+visits,length_of_stay,integer,number of days between admission and discharge,8,0 <= los <= 365
+visits,admission_type,string,type of hospital admission,Emergency,"values: Emergency, Scheduled, Transfer"
+visits,los_category,string,categorical length of stay classification,medium_stay,"values: short_stay, medium_stay, long_stay, extended_stay"
+diagnoses,visit_id,string,reference to hospital visit,V98765,foreign key to visits.visit_id
+diagnoses,icd_code,string,icd-10 diagnostic code,E11.9,"format: [A-Z][0-9][0-9A-Z](.[0-9A-Z]{1,4})?"
+diagnoses,primary_diagnosis,string,primary icd-10 code for the visit,E11.9,one per visit
+diagnoses,diagnosis_count,integer,total number of diagnoses for the visit,3,>= 0
+medications,visit_id,string,reference to hospital visit,V98765,foreign key to visits.visit_id
+medications,medication_name,string,name of prescribed medication,Metformin,"not null, standardized generic names"
+medications,medication_count,integer,total number of medications prescribed,5,>= 0
+staff,staff_id,string,unique identifier for hospital staff member,S45678,"primary key, not null, unique"
+staff,staff_name,string,full name of staff member,Dr. Jane Smith,not null
+staff,role,string,staff role or position,Physician,"values: Physician, Nurse, Specialist, etc."
+transformed,is_readmitted,boolean,flag indicating if patient was readmitted within 30 days,True,"values: 0 (no), 1 (yes)"
+transformed,is_high_risk,boolean,flag for high-risk patients based on multiple criteria,True,"values: 0 (no), 1 (yes); based on age, los, diagnosis count, medication count"
+transformed,days_since_last_admission,integer,number of days since patient's previous admission,45,>= 0
+transformed,is_weekend_admission,boolean,flag indicating weekend admission (saturday/sunday),False,"values: 0 (no), 1 (yes)"
+transformed,admission_month,integer,month of admission (1-12),6,1 <= month <= 12
+transformed,admission_quarter,integer,quarter of admission (1-4),2,1 <= quarter <= 4

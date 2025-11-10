@@ -1,0 +1,33 @@
+# core data processing libraries
+pandas
+numpy==1.26.2
+openpyxl
+
+# data profiling and visualization
+ydata-profiling
+sweetviz
+seaborn
+plotly
+
+# machine learning and analytics
+scikit-learn
+mlxtend
+imbalanced-learn
+
+# data quality and validation
+great-expectations
+pytest
+
+# fuzzy matching for entity resolution
+fuzzywuzzy
+python-Levenshtein
+
+# database connectivity (optional)
+sqlalchemy
+psycopg2-binary
+
+# utilities
+python-dateutil
+tqdm
+jupyter
+ipykernel

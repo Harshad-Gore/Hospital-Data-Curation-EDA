@@ -1,0 +1,5 @@
+metric,status,details
+patient id uniqueness,✓ pass,True
+visit id uniqueness,✓ pass,True
+overall data completeness,✓ pass,96.19%
+date consistency,✓ pass,True

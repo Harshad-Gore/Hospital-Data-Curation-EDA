@@ -1,0 +1,7 @@
+dataset,total_rows,total_columns,missing_cells,missing_percentage,duplicate_rows,memory_mb
+patients,3000,7,0,0.0,0,1.47
+visits,5000,7,0,0.0,0,2.12
+diagnoses,8000,4,0,0.0,0,2.05
+medications,6000,6,0,0.0,0,2.23
+staff,500,5,0,0.0,0,0.15
+hospital_info,20,5,0,0.0,0,0.0

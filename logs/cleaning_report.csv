@@ -1,0 +1,6 @@
+dataset,initial_rows,final_rows,removed_rows
+patients,3000,3000,0
+visits,5000,2481,2519
+diagnoses,8000,7998,2
+medications,6000,5324,676
+staff,500,500,0

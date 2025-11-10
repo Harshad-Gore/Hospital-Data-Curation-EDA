@@ -1,0 +1,7 @@
+dataset_name,file_name,file_path,rows,columns,memory_mb,total_missing,duplicates,column_list
+patients,patients.csv,d:\Github Desktop\Python\Hospital Data Curation\data\raw\patients.csv,3000,7,1.47,0,0,"patient_id, name, dob, gender, contact_number..."
+visits,visits.csv,d:\Github Desktop\Python\Hospital Data Curation\data\raw\visits.csv,5000,7,2.12,0,0,"visit_id, patient_id, admission_date, discharge_date, admission_type..."
+diagnoses,diagnoses.csv,d:\Github Desktop\Python\Hospital Data Curation\data\raw\diagnoses.csv,8000,4,2.05,0,0,"diagnosis_id, visit_id, icd_code, description"
+medications,medications.csv,d:\Github Desktop\Python\Hospital Data Curation\data\raw\medications.csv,6000,6,2.23,0,0,"med_id, visit_id, medication_name, dosage, start_date..."
+staff,staff.csv,d:\Github Desktop\Python\Hospital Data Curation\data\raw\staff.csv,500,5,0.15,0,0,"staff_id, name, designation, unit_id, joining_date"
+hospital_info,hospital_info.csv,d:\Github Desktop\Python\Hospital Data Curation\data\raw\hospital_info.csv,20,5,0.0,0,0,"unit_id, department, floor, bed_capacity, location"
